@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- ROBOTO FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <main class="wrapper">
 
+        <!-- INIZIO TOOLBAR TOP -->
         <div class="toolbar-top">
             
+            <div class="view">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <h4>Speaker View</h4>
+            </div>
+
+            <div class="maximize">
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+
         </div>
+        <!-- FINE TOOLBAR TOP -->
 
         <!-- INIZIO CONTAINER -->
         <section class="container">
@@ -308,11 +326,84 @@
         </section>
         <!-- FINE CONTAINER -->
 
+        <!-- INIZIO TOOLBAR BOTTOM -->
         <div class="toolbar-bottom">
+
+            <!-- TOOLBAR SINISTRA -->
+            <div class="flex-left">
+
+                <div class="item">
+                    <i class="fa-solid fa-microphone"></i>
+                    <p>Mute</p>
+                </div>
+
+                <i class="fa-solid fa-angle-up"></i>
+
+                <div class="item">
+                    <i class="fa-solid fa-video"></i>
+                    <p>Stop Video</p>
+                </div>
+
+                <i class="fa-solid fa-angle-up"></i>
+
+            </div>
+
+            <!-- TOOLBAR CENTRO -->
+            <div class="flex-center">
+
+                <div class="item">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <p>Invite</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p>Manage Participants</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-sharp fa-solid fa-chart-bar"></i>
+                    <p>Polling</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <p>Share Screen</p>
+                </div>
+                
+                <i class="fa-solid fa-angle-up"></i>
+                
+                <div class="item">
+                    <i class="fa-solid fa-comment"></i>
+                    <p>Chat</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                    <p>Record</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    <p>Breakout Rooms</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p>More</p>
+                </div>
+
+            </div>
+
+            <!-- TOOLBAR DESTRA -->
+            <div class="flex-right">
+                <p>End meeting</p>
+            </div>
             
         </div>
+        <!-- FINE TOOLBAR BOTTOM -->
 
     </main>
-    
+
 </body>
 </html>

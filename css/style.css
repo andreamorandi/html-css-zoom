@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -41,20 +45,86 @@ img{
     display: inline-block;
 }
 
-.toolbar-top{
-    height: 100px;
-    background-color: black;
-}
-
-.toolbar-bottom{
-    height: 100px;
-    background-color: #222222;
-}
-
 .name{
     position: absolute;
     left: 0;
     bottom: 0;
     padding: 0.3em;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.toolbar-bottom{
+    height: 100px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar-bottom .item{
+    padding: 0 0.8em;
+}
+
+.toolbar-bottom i{
+    font-size: 1.8rem;
+    padding-bottom: 0.3em;
+}
+
+.toolbar-bottom .flex-left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.toolbar-bottom .fa-angle-up{
+    font-size: 1rem;
+    padding-right: 0.5em;
+}
+
+.toolbar-bottom .flex-center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-center .fa-share-from-square{
+    color: #4bc800;
+}
+
+.toolbar-bottom .flex-right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background-color: #4a4a4a;
+    color: #ff1930;
+}
+
+.toolbar-top{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toolbar-top .view{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.toolbar-top .view h4{
+    display: inline-block;
+}
+
+.toolbar-top .maximize{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.3em;
+    margin-left: 0.7em;
+    margin-right: 0.3em;
+    border-radius: 5px;
 }
